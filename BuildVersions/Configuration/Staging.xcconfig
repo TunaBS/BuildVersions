@@ -1,0 +1,16 @@
+//
+//  Staging.xcconfig
+//  BuildVersions
+//
+//  Created by BS00880 on 14/8/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+//Staging.xcconfig
+BASE_URL = https:/$()/www.youtube.com/@StewartLynch
+
+APP_NAME = BuildVersions (Staging)
+APP_BUNDLE_ID = me.fairuz.ahmed.BuildVersions.staging
+CT_BUTTON_COLOR = Blue

@@ -1,0 +1,16 @@
+//
+//  Production.xcconfig
+//  BuildVersions
+//
+//  Created by BS00880 on 14/8/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+//Production.xcconfig
+BASE_URL = https:/$()/seanallen.teachable.com/
+
+APP_NAME = BuildVersions
+APP_BUNDLE_ID = me.fairuz.ahmed.BuildVersions.release
+CT_BUTTON_COLOR = Green

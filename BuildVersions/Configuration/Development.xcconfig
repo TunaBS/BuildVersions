@@ -1,0 +1,16 @@
+//
+//  Config.xcconfig
+//  BuildVersions
+//
+//  Created by BS00880 on 14/8/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+//Development.xcconfig
+BASE_URL = https:/$()/www.hackingwithswift.com/100/swiftui
+
+APP_NAME = BuildVersions (Dev)
+APP_BUNDLE_ID = me.fairuz.ahmed.BuildVersions.debug
+CT_BUTTON_COLOR = Purple

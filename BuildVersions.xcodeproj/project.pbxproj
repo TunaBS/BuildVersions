@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B44A2042C6DC2C300A3EE87 /* ColorFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B44A2032C6DC2C300A3EE87 /* ColorFile.swift */; };
 		4B5CF5F12C6CC729003E8219 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5CF5F02C6CC729003E8219 /* AppDelegate.swift */; };
 		4B5CF5F32C6CC729003E8219 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5CF5F22C6CC729003E8219 /* SceneDelegate.swift */; };
 		4B5CF5F52C6CC729003E8219 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5CF5F42C6CC729003E8219 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B44A2032C6DC2C300A3EE87 /* ColorFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorFile.swift; sourceTree = "<group>"; };
 		4B5CF5ED2C6CC729003E8219 /* BuildVersions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuildVersions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5CF5F02C6CC729003E8219 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B5CF5F22C6CC729003E8219 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +51,9 @@
 		4B5CF60D2C6CC72A003E8219 /* BuildVersionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuildVersionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5CF6112C6CC72A003E8219 /* BuildVersionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildVersionsUITests.swift; sourceTree = "<group>"; };
 		4B5CF6132C6CC72A003E8219 /* BuildVersionsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildVersionsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4B5CF6202C6CC793003E8219 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		4B5CF6262C6CCEB3003E8219 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		4B5CF6272C6CCECE003E8219 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +104,7 @@
 		4B5CF5EF2C6CC729003E8219 /* BuildVersions */ = {
 			isa = PBXGroup;
 			children = (
+				4B5CF6252C6CCE37003E8219 /* Configuration */,
 				4B5CF5F02C6CC729003E8219 /* AppDelegate.swift */,
 				4B5CF5F22C6CC729003E8219 /* SceneDelegate.swift */,
 				4B5CF5F42C6CC729003E8219 /* ViewController.swift */,
@@ -106,6 +112,7 @@
 				4B5CF5F92C6CC72A003E8219 /* Assets.xcassets */,
 				4B5CF5FB2C6CC72A003E8219 /* LaunchScreen.storyboard */,
 				4B5CF5FE2C6CC72A003E8219 /* Info.plist */,
+				4B44A2032C6DC2C300A3EE87 /* ColorFile.swift */,
 			);
 			path = BuildVersions;
 			sourceTree = "<group>";
@@ -125,6 +132,16 @@
 				4B5CF6132C6CC72A003E8219 /* BuildVersionsUITestsLaunchTests.swift */,
 			);
 			path = BuildVersionsUITests;
+			sourceTree = "<group>";
+		};
+		4B5CF6252C6CCE37003E8219 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				4B5CF6202C6CC793003E8219 /* Development.xcconfig */,
+				4B5CF6262C6CCEB3003E8219 /* Production.xcconfig */,
+				4B5CF6272C6CCECE003E8219 /* Staging.xcconfig */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B5CF5F52C6CC729003E8219 /* ViewController.swift in Sources */,
+				4B44A2042C6DC2C300A3EE87 /* ColorFile.swift in Sources */,
 				4B5CF5F12C6CC729003E8219 /* AppDelegate.swift in Sources */,
 				4B5CF5F32C6CC729003E8219 /* SceneDelegate.swift in Sources */,
 			);
@@ -318,6 +336,7 @@
 /* Begin XCBuildConfiguration section */
 		4B5CF6152C6CC72A003E8219 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B5CF6202C6CC793003E8219 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -381,6 +400,7 @@
 		};
 		4B5CF6162C6CC72A003E8219 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B5CF6262C6CCEB3003E8219 /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -437,9 +457,11 @@
 		};
 		4B5CF6182C6CC72A003E8219 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B5CF6202C6CC793003E8219 /* Development.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDebug;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "${CT_BUTTON_COLOR}";
+				ASSET_CATALOG = "Assets-Debug";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -454,7 +476,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.fairuz.ahmed.BuildVersions;
+				OTHER_SWIFT_FLAGS = "-DDEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = me.fairuz.ahmed.BuildVersions.debug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -464,9 +487,11 @@
 		};
 		4B5CF6192C6CC72A003E8219 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B5CF6262C6CCEB3003E8219 /* Production.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconRelease;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "${CT_BUTTON_COLOR}";
+				ASSET_CATALOG = "Assets-Release";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -481,8 +506,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.fairuz.ahmed.BuildVersions;
+				OTHER_SWIFT_FLAGS = "-DRELEASE";
+				PRODUCT_BUNDLE_IDENTIFIER = me.fairuz.ahmed.BuildVersions.release;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = RELEASE;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -491,6 +518,7 @@
 		};
 		4B5CF61B2C6CC72A003E8219 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B5CF6202C6CC793003E8219 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +538,7 @@
 		};
 		4B5CF61C2C6CC72A003E8219 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B5CF6262C6CCEB3003E8219 /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -529,6 +558,7 @@
 		};
 		4B5CF61E2C6CC72A003E8219 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B5CF6202C6CC793003E8219 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +576,7 @@
 		};
 		4B5CF61F2C6CC72A003E8219 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B5CF6262C6CCEB3003E8219 /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -561,6 +592,139 @@
 			};
 			name = Release;
 		};
+		4B5CF6282C6CD006003E8219 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B5CF6272C6CCECE003E8219 /* Staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Staging;
+		};
+		4B5CF6292C6CD006003E8219 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B5CF6272C6CCECE003E8219 /* Staging.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconStaging;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "${CT_BUTTON_COLOR}";
+				ASSET_CATALOG = "Assets-Staging";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BuildVersions/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-DSTAGING";
+				PRODUCT_BUNDLE_IDENTIFIER = me.fairuz.ahmed.BuildVersions.staging;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = STAGING;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		4B5CF62A2C6CD006003E8219 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B5CF6272C6CCECE003E8219 /* Staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.fairuz.ahmed.BuildVersionsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BuildVersions.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BuildVersions";
+			};
+			name = Staging;
+		};
+		4B5CF62B2C6CD006003E8219 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B5CF6272C6CCECE003E8219 /* Staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.fairuz.ahmed.BuildVersionsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BuildVersions;
+			};
+			name = Staging;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -568,6 +732,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4B5CF6152C6CC72A003E8219 /* Debug */,
+				4B5CF6282C6CD006003E8219 /* Staging */,
 				4B5CF6162C6CC72A003E8219 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -577,6 +742,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4B5CF6182C6CC72A003E8219 /* Debug */,
+				4B5CF6292C6CD006003E8219 /* Staging */,
 				4B5CF6192C6CC72A003E8219 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -586,6 +752,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4B5CF61B2C6CC72A003E8219 /* Debug */,
+				4B5CF62A2C6CD006003E8219 /* Staging */,
 				4B5CF61C2C6CC72A003E8219 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -595,6 +762,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4B5CF61E2C6CC72A003E8219 /* Debug */,
+				4B5CF62B2C6CD006003E8219 /* Staging */,
 				4B5CF61F2C6CC72A003E8219 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
