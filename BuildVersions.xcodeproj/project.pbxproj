@@ -17,6 +17,8 @@
 		4B5CF6082C6CC72A003E8219 /* BuildVersionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5CF6072C6CC72A003E8219 /* BuildVersionsTests.swift */; };
 		4B5CF6122C6CC72A003E8219 /* BuildVersionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5CF6112C6CC72A003E8219 /* BuildVersionsUITests.swift */; };
 		4B5CF6142C6CC72A003E8219 /* BuildVersionsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5CF6132C6CC72A003E8219 /* BuildVersionsUITestsLaunchTests.swift */; };
+		4B6D7D032C6F0F9B00EA0D69 /* ModeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6D7D022C6F0F9B00EA0D69 /* ModeTest.swift */; };
+		4B6D7D052C6F1E7D00EA0D69 /* MathStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6D7D042C6F1E7D00EA0D69 /* MathStuff.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		4B5CF6202C6CC793003E8219 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		4B5CF6262C6CCEB3003E8219 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		4B5CF6272C6CCECE003E8219 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
+		4B6D7D022C6F0F9B00EA0D69 /* ModeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeTest.swift; sourceTree = "<group>"; };
+		4B6D7D042C6F1E7D00EA0D69 /* MathStuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathStuff.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 				4B5CF5FB2C6CC72A003E8219 /* LaunchScreen.storyboard */,
 				4B5CF5FE2C6CC72A003E8219 /* Info.plist */,
 				4B44A2032C6DC2C300A3EE87 /* ColorFile.swift */,
+				4B6D7D042C6F1E7D00EA0D69 /* MathStuff.swift */,
 			);
 			path = BuildVersions;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				4B5CF6072C6CC72A003E8219 /* BuildVersionsTests.swift */,
+				4B6D7D022C6F0F9B00EA0D69 /* ModeTest.swift */,
 			);
 			path = BuildVersionsTests;
 			sourceTree = "<group>";
@@ -276,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B5CF5F52C6CC729003E8219 /* ViewController.swift in Sources */,
+				4B6D7D052C6F1E7D00EA0D69 /* MathStuff.swift in Sources */,
 				4B44A2042C6DC2C300A3EE87 /* ColorFile.swift in Sources */,
 				4B5CF5F12C6CC729003E8219 /* AppDelegate.swift in Sources */,
 				4B5CF5F32C6CC729003E8219 /* SceneDelegate.swift in Sources */,
@@ -286,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B6D7D032C6F0F9B00EA0D69 /* ModeTest.swift in Sources */,
 				4B5CF6082C6CC72A003E8219 /* BuildVersionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

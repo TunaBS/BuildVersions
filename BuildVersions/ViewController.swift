@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var image: UIImageView!
     
     override func viewDidLoad() {
+        super.viewDidLoad()
     #if STAGING
         modeName.text = "Staging mode"
         image.image = UIImage(named: "Staging")
@@ -25,7 +26,7 @@ class ViewController: UIViewController {
         image.image = UIImage(named: "Release")
     #endif
 
-        super.viewDidLoad()
+        
     }
 
 
@@ -39,5 +40,7 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    
 }
 
